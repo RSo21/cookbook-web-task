@@ -1,4 +1,6 @@
 import React, { Component } from "react";
+import {NavLink} from "react-router-dom";
+import ackeeFood from '../assets/ackeeFood.png';
 
 class Recipies extends Component {
     state = {
@@ -10,22 +12,26 @@ class Recipies extends Component {
         open: false,
     };
 
-     componentDidMount() {
-        const URL = 'https://cookbook.ack.ee/api/v1/recipes?limit=10&offset=0';
+    //  componentDidMount() {
+    //     const URL = 'https://cookbook.ack.ee/api/v1/recipes?limit=10&offset=0';
 
-            fetch(URL, {mode: "no-cors"})
-            .then(response => response.json())
-            .then(data => {
-              this.setState({
-                name: data.name,
-                duration: data.duration,
-                id: data.id,
-                score: data.score,
-                open: true,
-              });
-            })
+    //         fetch(URL, {mode: "no-cors",
+    //         headers: {
+    //             "Content-Type": "Content-Type:application/json",
+    //         },
+    //     })
+    //         .then(response => response.json())
+    //         .then(data => {
+    //           this.setState({
+    //             name: data.name,
+    //             duration: data.duration,
+    //             id: data.id,
+    //             score: data.score,
+    //             open: true,
+    //           });
+    //         })
         
-    }
+    // }
 
     componentWillUnmount() {
         window.removeEventListener('resize', this.handleWindowSizeChange);
@@ -49,8 +55,34 @@ class Recipies extends Component {
         else{
             return(
                 <div>
-                    {name}
-nanananna
+                    <div>
+                        <h1>Recipies</h1>
+                        <NavLink exact to="/new"><i class="fas fa-plus"></i></NavLink>
+                    </div>
+                    <div>
+                        <img src={ackeeFood} alt="ackee Food"/>
+                        <div>
+                            <p>Chocolate nutella with orange</p>
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            <i class="far fa-clock"></i> 60 min
+                        </div>
+                    </div>
+                    <div>
+                        <img src={ackeeFood} alt="ackee Food"/>
+                        <div>
+                            <p>Pear in milk chocolate with coconut flakes</p>
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            <i class="far fa-clock"></i> 30 min
+                        </div>
+                    </div>
+                    <div>
+                        <img src={ackeeFood} alt="ackee Food"/> 
+                        <div>
+                            <p>Chocolate nutella with orange</p>
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            <i class="far fa-clock"></i> 60 min
+                        </div>
+                    </div>
                 </div>
             )
 
