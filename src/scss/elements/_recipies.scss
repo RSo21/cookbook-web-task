@@ -1,0 +1,17 @@
+.recipies-container{
+    display: flex;
+    flex-direction: column;
+
+    .recipies-container-title{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 2em;
+
+        h1,
+        .title-plus{
+            font-size: 1.5em;
+        }
+
+    }
+}

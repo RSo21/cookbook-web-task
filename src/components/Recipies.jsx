@@ -54,10 +54,10 @@ class Recipies extends Component {
 
         else{
             return(
-                <div>
-                    <div>
+                <div className="recipies-container">
+                    <div className="recipies-container-title">
                         <h1>Recipies</h1>
-                        <NavLink exact to="/new"><i class="fas fa-plus"></i></NavLink>
+                        <NavLink exact to="/new"><i class="fas fa-plus title-plus"></i></NavLink>
                     </div>
                     <div>
                         <img src={ackeeFood} alt="ackee Food"/>
