@@ -59,25 +59,25 @@ class Recipies extends Component {
                         <h1>Recipies</h1>
                         <NavLink exact to="/new"><i class="fas fa-plus title-plus"></i></NavLink>
                     </div>
-                    <div>
+                    <div className="recipies-container-content">
                         <img src={ackeeFood} alt="ackee Food"/>
-                        <div>
+                        <div className="recipies-container-content-text">
                             <p>Chocolate nutella with orange</p>
                             <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
                             <i class="far fa-clock"></i> 60 min
                         </div>
                     </div>
-                    <div>
+                    <div className="recipies-container-content">
                         <img src={ackeeFood} alt="ackee Food"/>
-                        <div>
+                        <div className="recipies-container-content-text">
                             <p>Pear in milk chocolate with coconut flakes</p>
                             <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
                             <i class="far fa-clock"></i> 30 min
                         </div>
                     </div>
-                    <div>
+                    <div className="recipies-container-content">
                         <img src={ackeeFood} alt="ackee Food"/> 
-                        <div>
+                        <div className="recipies-container-content-text">
                             <p>Chocolate nutella with orange</p>
                             <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
                             <i class="far fa-clock"></i> 60 min
