@@ -63,24 +63,24 @@ class Recipies extends Component {
                         <img src={ackeeFood} alt="ackee Food"/>
                         <div className="recipies-container-content-text">
                             <p>Chocolate nutella with orange</p>
-                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-                            <i class="far fa-clock"></i> 60 min
+                            <i className="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            <i className="far fa-clock"></i> 60 min
                         </div>
                     </div>
                     <div className="recipies-container-content">
                         <img src={ackeeFood} alt="ackee Food"/>
                         <div className="recipies-container-content-text">
                             <p>Pear in milk chocolate with coconut flakes</p>
-                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-                            <i class="far fa-clock"></i> 30 min
+                            <i className="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            <i className="far fa-clock"></i> 30 min
                         </div>
                     </div>
                     <div className="recipies-container-content">
                         <img src={ackeeFood} alt="ackee Food"/> 
                         <div className="recipies-container-content-text">
                             <p>Chocolate nutella with orange</p>
-                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-                            <i class="far fa-clock"></i> 60 min
+                            <i className="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            <i className="far fa-clock"></i> 60 min
                         </div>
                     </div>
                 </div>
